@@ -1,3 +1,6 @@
+#main cmake file
+CMakeLists.txt
+
 #Directories
 .vs/
 .vscode/
