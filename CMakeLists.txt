@@ -1,12 +1,19 @@
-# CMakeList.txt : Top-level CMake project file, do global configuration
-# and include sub-projects here.
-#
 cmake_minimum_required (VERSION 3.6)
 
-project (AppazoidProject)
+project (MyApplication)
 
-# Include sub-projects.
+#'vendor'
+add_subdirectory(vendor/Appazoid)
 
-add_subdirectory ("Appazoid/Appazoid")
-add_subdirectory ("vendor")
-add_subdirectory ("Application")
+
+#'app'
+
+add_executable (${PROJECT_NAME} 
+app/src/Application.cpp
+app/src/Layers/MainLayer.cpp
+)
+
+target_link_libraries(
+    ${PROJECT_NAME}
+    appazoid::appazoid
+)
