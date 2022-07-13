@@ -1,5 +1,3 @@
 @echo off
-cd ../
-cmake --build out
-cmake -B out
+py build.py
 PAUSE

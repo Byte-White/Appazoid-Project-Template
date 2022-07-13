@@ -1,0 +1,11 @@
+{
+    "project":
+    {
+        "name": "MyProject",
+        "version": 1.0,
+        "cmake_minimum_version": 3.6,
+        "link_libraries": ["appazoid::appazoid"],
+        "render_api": "AZ_RENDER_API_OPENGL",
+        "output_folder": "out"
+    }
+}
