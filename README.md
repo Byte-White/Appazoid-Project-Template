@@ -1,4 +1,4 @@
-# Appazoid-Project-Template
+# Appazoid-Project-Template (non-VCPKG version)
 A Template For GUI Apps With Appazoid Framework
 
 # How To Build:
