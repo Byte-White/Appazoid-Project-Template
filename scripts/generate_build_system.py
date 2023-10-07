@@ -77,7 +77,7 @@ def generate_cmake():
 
 #1 == AZ_RENDER_API_OPENGL
 #2 == AZ_RENDER_API_VULKAN
-add_compile_definitions(AZ_RENDER_API={render_api})
+add_compile_definitions(AZ_RENDER_API={"2" if (render_api=="Vulkan") else "1"})
 
 add_executable (${{PROJECT_NAME}} 
 """)

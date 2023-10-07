@@ -3,9 +3,11 @@
     {
         "name": "MyProject",
         "version": 1.0,
-        "cmake_minimum_version": 3.6,
+        "cmake_minimum_version": 3.2,
         "link_libraries": ["appazoid::appazoid"],
         "render_api": "AZ_RENDER_API_OPENGL",
+        "user_definitions": [],
+        "use_vcpkg": false,
         "output_folder": "out"
     }
 }
